@@ -383,6 +383,10 @@ input[type=text]:invalid:not(:placeholder-shown) {
   letter-spacing: 0.02em;
   color: #32322C;
 }
+.section__schema {
+  width: 100%;
+  min-height: 841px;
+}
 .section__map {
   width: 100%;
   min-height: 654px;
