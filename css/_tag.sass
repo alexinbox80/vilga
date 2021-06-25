@@ -1,0 +1,44 @@
+html
+  height: 100%
+
+body
+  font-family: $fontFamily
+  color: $fontColor
+  background-color: $backgroundColor
+  height: 100%
+  padding: 0
+  margin: 0
+
+ul, li
+  display: block
+  padding: 0
+  margin: 0
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+
+h1
+  +fontProper(40px, 600, 56px, .03em, $fontColor)
+
+h2
+  +fontProper(30px, 500, 45px, .07em, $fontColor)
+
+h2:first-letter
+  text-transform: uppercase
+
+p:first-letter
+  text-transform: uppercase
+
+input[type="text"]
+  padding: 8px 24px
+
+input[type="text"]:focus
+  border: 1px solid rgba(88, 159, 23, 0.23)
+  box-sizing: border-box
+
+input[type="text"]:invalid:not(:placeholder-shown)
+  border-color: #EB5757
+
+
+
+

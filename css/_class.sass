@@ -1,0 +1,276 @@
+.wrapper
+  min-height: 100%
+  display: flex
+  flex-direction: column
+
+.top
+  flex-grow: 1
+
+.footer
+  min-height: 250px
+  background-color: $backgroundColor
+  padding-top: 41px
+  box-sizing: border-box
+
+.content
+  padding: 0 calc(50% - 621px)
+
+.advntcontent
+  padding: 0 calc(50% - 409px)
+
+.mask__content
+  display: block
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 100
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.65)
+  visibility: hidden
+  opacity: 0
+
+
+.logo
+  background: url("../img/logo.svg") no-repeat center
+  width: 122px
+  height: 96px
+
+.phone a
+  +fontProper(24px, 500, 26.4px, 0.04em, $fontColor)
+  text-decoration: none
+
+.header
+  position: relative
+  background-color: $backgroundColor
+
+  &__top
+    height: $headerHeight
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__shadow
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.1)
+    position: relative
+
+  &__menu
+    cursor: pointer
+
+  &__textmenu
+    display: flex
+    margin-right: 200px
+
+  &__background
+    background: url("../img/bannerfilter.png"), url("../img/banner.jpg") no-repeat center
+    background-size: cover
+    min-height: 523px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &__title
+    text-transform: uppercase
+
+  &__stitle
+    +fontProper(12px, 400, 20px, 0.015em, $fontColor)
+    text-transform: uppercase
+    font-weight: bold
+
+  &__form
+    background: $backgroundColor
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 30px rgba(0, 0, 0, 0.1)
+    backdrop-filter: blur(4px)
+    border-radius: 16px
+    padding: 48px 19px 32px
+    position: relative
+
+  &__formtitle
+    margin-bottom: 24px
+    +fontProper(18px, 400, 32px, 0.02em, $fontColor)
+
+
+  &__formicon
+    position: absolute
+    top: -50px
+    left: 135px
+
+  &__form-name
+    background: $backgroundColor
+    border: 1px solid rgba(88, 159, 23, 0.23)
+    box-sizing: border-box
+    border-radius: 10px
+    margin-bottom: 24px
+    +fontProper(18px, 400, 32px, 0.02em, $fontFormColor)
+
+  &__form-phone
+    background: $backgroundColor
+    border: 1px solid rgba(88, 159, 23, 0.23)
+    box-sizing: border-box
+    border-radius: 10px
+    margin-bottom: 24px
+    +fontProper(18px, 400, 32px, 0.02em, $fontFormColor)
+
+  &__form-submit
+    +fontProper(12px, 400, 14px, 0.02em, $backgroundColor)
+    text-transform: uppercase
+    background: $colorSelect
+    border-radius: 1px 1px 1px 2px
+    border: 1px solid $colorSelect
+    width: 100%
+    padding-top: 16px
+    padding-bottom: 16px
+    box-sizing: border-box
+    cursor: pointer
+
+  &__form-submit:hover
+    +fontProper(12px, 400, 14px, 0.02em, $backgroundColor)
+    background: $colorSelectHover
+
+  &__form-submit:active
+    +fontProper(12px, 400, 14px, 0.02em, $backgroundColor)
+    background: $colorSelectActive
+    border: 1px solid $colorSelectActive
+
+#header__formfields
+  display: flex
+  flex-direction: column
+
+.top__menu
+  display: none
+
+.menu
+  &__textitem:not(:nth-child(2))
+    width: 112px
+
+  &__textitem:nth-child(2)
+    width: 60px
+
+  &__textitem:not(:last-child)
+    margin-right: 73px
+
+  &__textitem a:hover
+    +fontProper(12px, 800, 20px, 0.084em, $fontColor)
+    background: url("../img/hline.svg") no-repeat bottom left
+    padding-bottom: 5px
+
+  &__textlink
+    text-decoration: none
+    +fontProper(12px, 500, 20px, 0.084em, $fontColor)
+    text-transform: uppercase
+
+.advantages
+  padding-top: 80px
+  padding-bottom: 40px
+  background: url("../img/bgadv.jpg") no-repeat right bottom
+
+  &__text
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  &__item
+    width: calc(100% / 2 - 121px)
+    margin-bottom: 32px
+
+  &__pics
+    margin-bottom: 24px
+
+  &__title
+    +fontProper(16px, 700, 26px, 0.04em, $fontColor)
+
+  &__text
+    +fontProper(14px, 400, 28.5px, 0.01em, $fontColor)
+
+.gallery
+  padding-top: 80px
+  padding-bottom: 100px
+  background: rgba(243, 246, 243, 1) url("../img/bggalery.jpg") no-repeat left bottom
+
+  &__picitem
+    display: flex
+    flex-wrap: wrap
+
+  &__pics
+    width: 100%
+
+  &__items
+    width: calc(100% / 3 - 20px)
+    margin-bottom: 30px
+
+  &__items:not(:nth-child(3n+3))
+    margin-right: 30px
+
+  &__lists ul
+    display: flex
+    justify-content: center
+
+  &__pageli
+    width: 132px
+    height: 57px
+    line-height: 57px
+    text-align: center
+    background: $backgroundColor
+    border: 1px solid $colorSelect
+    box-sizing: border-box
+    cursor: pointer
+
+  &__pageli a
+    text-decoration: none
+
+  &__page
+    +fontProper(18px, 700, 21px, 0.01em, $fontColor)
+
+.active
+  background: $colorSelect
+
+.active a span
+  color: $backgroundColor
+
+.schema
+  padding-top: 80px
+  padding-bottom: 100px
+
+.map
+  padding-top: 80px
+  background: rgba(243, 246, 243, 1) url("../img/bgmap.jpg") no-repeat right top
+
+.section
+  &__text
+    width: fit-content
+
+  &__header
+    padding-bottom: 64px
+    display: flex
+    align-items: center
+    flex-direction: column
+
+  &__title
+    text-transform: uppercase
+    text-align: center
+
+  &__subtext
+    text-align: center
+    +fontProper(18px, 400, 32px, 0.02em, $fontColor)
+
+  &__map
+    width: 100%
+    min-height: 654px
+
+.footer
+  &__content
+    display: flex
+    justify-content: space-between
+
+  &__address
+    +fontProper(18px, 400, 32px, 0.02em, $fontColor)
+
+  &__iposition
+    margin-right: 350px
+
+  &__textlink
+    +fontProper(18px, 400, 32px, 0.02em, $fontColor)
+    text-decoration: none
+
+
+
