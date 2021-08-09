@@ -2,22 +2,15 @@
 <html lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
+    <title>Vilga</title>
     <meta name="robots" content="none">
-    <meta name=""
-          content=""/>
     <script src="js/main.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#191919">
-    <link rel="icon" href="*.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="*.ico" type="image/x-icon">
-    <link rel="icon" sizes="192x192" href="*.png">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700,800" rel="stylesheet">
-
     <link href="css/main.css" type="text/css" rel="stylesheet"/>
     <script defer src="js/main.js"></script>
 </head>
@@ -27,10 +20,19 @@
             <header id="header" class="header">
                 <div class="header__shadow">
                     <div class="content">
-                        <ul class="header__top">
-                            <li class="header__titem top__menu">
+                        <div class="header__top">
+                            <div class="top__menu">
                                 <input type="checkbox" id="menu__toggle">
-                                <label for="menu__toggle"><span class="header__menu">MENU</span></label>
+                                <label for="menu__toggle">
+                                    <span class="header__menu">
+                                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="14" y="15" width="20" height="2" fill="#32322C"/>
+                                            <rect x="14" y="23" width="16" height="2" fill="#32322C"/>
+                                            <rect x="14" y="31" width="12" height="2" fill="#32322C"/>
+                                        </svg>
+                                    </span>
+                                </label>
                                 <nav class="menu__list">
                                     <ul class="menu__ul">
                                         <li class="menu__close">
@@ -38,14 +40,18 @@
                                                 <span class="menu__tclose">close</span>
                                             </label>
                                         </li>
-                                        <li class="menu__item"><a href="#advantages" class="menu__link">преимущества</a></li>
+                                        <li class="menu__item"><a href="#advantages" class="menu__link">преимущества</a>
+                                        </li>
                                         <li class="menu__item"><a href="#gallery" class="menu__link">галерея</a></li>
-                                        <li class="menu__item"><a href="#schema" class="menu__link">план&nbsp;поселка</a></li>
-                                        <li class="menu__item"><a href="#map" class="menu__link">как&nbsp;проехать</a></li>
+                                        <li class="menu__item"><a href="#schema"
+                                                                  class="menu__link">план&nbsp;поселка</a></li>
+                                        <li class="menu__item"><a href="#map" class="menu__link">как&nbsp;проехать</a>
+                                        </li>
                                     </ul>
                                 </nav>
                                 <div class="mask__content"></div>
-                            </li>
+                            </div>
+                            <ul class="header__topitem">
                             <li class="header__titem">
                                 <a href="#" class="logo__link">
                                     <div class="logo"></div>
@@ -68,11 +74,12 @@
                                 </ul>
                             </li>
                             <li class="header__titem">
-                            <span class="header__phone phone">
-                                <a href="tel:78126071795">7 812 607 17 95</a>
-                            </span>
+                                <span class="header__phone phone">
+                                    <a href="tel:78126071795">7 812 607 17 95</a>
+                                </span>
                             </li>
                         </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="header__background content">
@@ -204,7 +211,8 @@
                                 Экологичный район
                             </h5>
                             <p class="advantages__text">
-                                Природа, отдаленная от больших городов и промышленных центров, подарит тишину и свежий воздух
+                                Природа, отдаленная от больших городов и промышленных центров, подарит тишину и свежий
+                                воздух
                             </p>
                         </li>
                         <li class="advantages__item">
@@ -224,7 +232,8 @@
                                 Живописный ландшафт
                             </h5>
                             <p class="advantages__text">
-                                Поселок окружен лесом из сосновых боров и березовых рощ. В них растут дикие разнообразные Карельские ягоды и грибы.
+                                Поселок окружен лесом из сосновых боров и березовых рощ. В них растут дикие
+                                разнообразные Карельские ягоды и грибы.
                             </p>
                         </li>
                         <li class="advantages__item">
@@ -248,7 +257,8 @@
                                 Центральные коммуникации
                             </h5>
                             <p class="advantages__text">
-                                Поселок оснащен газом и электричеством, коммунальные платежи за которые достаточно недорогие.
+                                Поселок оснащен газом и электричеством, коммунальные платежи за которые достаточно
+                                недорогие.
                             </p>
                         </li>
                     </ul>
@@ -387,13 +397,19 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="footer__item">
+                    <li class="footer__item footer__addressmob">
                         <p class="footer__address">Вилга парк, поселок Новая Вилга</p>
                         <p class="footer__phone phone">
                             <a href="tel:78126071795">7 812 607 17 95</a>
                         </p>
                     </li>
                 </ul>
+                <div class="footer__item footer__addressdesc">
+                    <p class="footer__address">Вилга парк, поселок Новая Вилга</p>
+                    <p class="footer__phone phone">
+                        <a href="tel:78126071795">7 812 607 17 95</a>
+                    </p>
+                </div>
             </div>
         </footer>
     </div>
