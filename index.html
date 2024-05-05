@@ -4,7 +4,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>Vilga</title>
     <meta name="robots" content="none">
-    <script src="js/main.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="theme-color" content="#191919">
@@ -12,7 +11,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500,700,800" rel="stylesheet">
     <link href="css/main.css" type="text/css" rel="stylesheet"/>
-    <script defer src="js/main.js"></script>
+    <!-- MDB flags on lang select-->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css"
+            rel="stylesheet"
+    />
 </head>
 <body>
     <div class="wrapper">
@@ -52,13 +55,13 @@
                                 <div class="mask__content"></div>
                             </div>
                             <ul class="header__topitem">
-                            <li class="header__titem">
+                                <li class="header__titem">
                                 <a href="#" class="logo__link">
                                     <div class="logo"></div>
                                 </a>
                             </li>
-                            <li class="header__titem">
-                                <ul class="header__textmenu">
+                                <li class="header__titem">
+                                    <ul class="header__textmenu">
                                     <li class="menu__textitem">
                                         <a href="#advantages" class="menu__textlink">преимущества</a>
                                     </li>
@@ -72,13 +75,24 @@
                                         <a href="#map" class="menu__textlink">как&nbsp;проехать</a>
                                     </li>
                                 </ul>
-                            </li>
-                            <li class="header__titem">
+                                </li>
+                                <li class="header__titem">
+                                    <i class="flag flag-russia"></i>
+                                    <select class="lang__select header__lang">
+                                        <option value="ru" class="lang__russian">
+                                            ru
+                                        </option>
+                                        <option value="en" class="lang__english">
+                                            en
+                                        </option>
+                                    </select>
+                                </li>
+                                <li class="header__titem">
                                 <span class="header__phone phone">
                                     <a href="tel:78126071795">7 812 607 17 95</a>
                                 </span>
                             </li>
-                        </ul>
+                            </ul>
                         </div>
                     </div>
                 </div>
