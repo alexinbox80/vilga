@@ -1,0 +1,74 @@
+@charset "UTF-8"
+.flag-icon-background, .flag-icon
+  background-size: contain
+  background-position: 50%
+  background-repeat: no-repeat
+
+.flag-icon
+  position: relative
+  display: inline-block
+  width: 1.3333333333em
+  line-height: 1em
+
+.flag-icon:before
+  content: " "
+
+.flag-icon-rus
+  background-image: url("../img/flags/4x3/rus.svg")
+
+.flag-icon-deu
+  background-image: url("../img/flags/4x3/deu.svg")
+
+.flag-icon-gbr
+  background-image: url("../img/flags/4x3/gbr.svg")
+
+.flag-icon-fra
+  background-image: url("../img/flags/4x3/fra.svg")
+
+.lang__select
+  border: none
+  -moz-appearance: none
+  -webkit-appearance: none
+  text-transform: uppercase
+  padding-bottom: 4px
+  +fontProper(12px, 400, 20px, 0.015em, $fontColor)
+
+.lang__select:hover
+  cursor: pointer
+  //+fontProper(12px, 800, 20px, 0.084em, $fontColor)
+  background: url("../img/hline.svg") no-repeat bottom left
+
+.lang__select:focus
+  border: 0
+  outline: 0
+
+.lang
+  &__list
+    visibility: hidden
+    opacity: 0
+    position: absolute
+    box-sizing: border-box
+    z-index: 200
+    top: $headerHeight
+    background: white
+    padding: 16px
+    transition: visibility 0s, opacity 0.5s linear
+
+    &-item
+      cursor: pointer
+      text-transform: uppercase
+      +fontProper(12px, 400, 20px, 0.015em, $fontColor)
+
+    &-item:hover
+      background: url("../img/hline.svg") no-repeat bottom left
+
+    &-item:not(:last-child)
+      margin-bottom: 4px
+
+    &-link
+      text-decoration: none
+
+#lang__toggle:checked ~ .lang__list
+  visibility: visible
+  opacity: 1
+  box-shadow: 4px 0 20px 0 rgb(0 0 0 / 50%)
